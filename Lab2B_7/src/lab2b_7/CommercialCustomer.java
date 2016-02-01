@@ -10,16 +10,16 @@ package lab2b_7;
  * @author Max Kosabutski
  */
 public class CommercialCustomer extends Customer {
-    private static String businessName;
+    private String businessName;
     
     //as always, more constructors can be added.
-    public CommercialCustomer(int Accnu,String Accna, String BN){
-        super(AccountNumber, AccountName);
-        businessName = BN;
+    public CommercialCustomer(int accountNumber,String accountName, String businessName){
+        super(accountNumber, accountName);
+        this.businessName = businessName;
     }
     
     //in order to please our dark lord JAVA, I have committed many attrocities. Stack have mercy on my soul.
-    public static int getAccNumber(){
-        return AccountNumber;
+    public int getAccNumber(){
+        return super.accountNumber;
     }
 }
