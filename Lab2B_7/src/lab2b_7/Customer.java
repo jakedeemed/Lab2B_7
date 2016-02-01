@@ -10,7 +10,7 @@ package lab2b_7;
  * @author Max Kosabutski
  */
 //made Customer abstract since it's only here to presever muh hierarchy.
-public abstract class Customer {
+public class Customer {
     /* changed these variables to protected since private variables are not inherited by subclasses.
        
     */
