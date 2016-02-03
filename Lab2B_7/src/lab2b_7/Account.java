@@ -9,7 +9,7 @@ package lab2b_7;
  *
  * @author jakedotts
  */
-public class Account extends Checking{
+public class Account {
     
     private double accountBalance = 0;
     private double accountNumber;

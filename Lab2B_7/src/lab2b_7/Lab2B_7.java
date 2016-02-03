@@ -110,17 +110,19 @@ public class Lab2B_7 {
         }
         
     
-        System.out.println("How much money would you like to withdraw in increments of 20?");
-        userInput = sc.nextInt();
+        
         //Prints out the amount
         
         
         do{
-            System.out.println("Amount Withdraw:" + a.getRequest());
+            System.out.println("How much money would you like to withdraw in increments of 20?");
+            userInput = sc.nextInt();
         }   
         
        while(userInput % 20 != 0);
-           System.out.println("Enter a multiple of 20!");
+
+        System.out.println("Amount Withdraw:" + a.getRequest());
+           
        
                     
         
