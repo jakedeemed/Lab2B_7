@@ -9,11 +9,16 @@ package lab2b_7;
  *
  * @author jakedotts
  */
-public class SavingsAccount {
+public class Savings {
     
     private double savingsBalance = 0.0;
     
-    public SavingsAccount(){
+    public Savings(){
+        
+    }
+    
+    public Savings(double savingsBalance){
+        this.savingsBalance = savingsBalance;
     }
     
     public void setSavingsBalance(double newSavingsBalance){

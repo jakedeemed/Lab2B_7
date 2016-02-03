@@ -14,7 +14,11 @@ public class Check {
     private int checkNumber = 0;
     
     public Check(){
-         
+        
+    }
+    
+    public Check(int checkNumber){
+         this.checkNumber = checkNumber;
     }
     
     public int getCheckNumber(){

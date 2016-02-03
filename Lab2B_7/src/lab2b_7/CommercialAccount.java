@@ -9,6 +9,20 @@ package lab2b_7;
  *
  * @author jakedotts
  */
-public class CommercialAccount {
+public class CommercialAccount extends Account{
+    
+    private String businessName;
+    
+    public CommercialAccount(){
+        
+    }
+    public CommercialAccount(String businessName, double accountBalance, double accountNumber){
+        super(accountBalance, accountNumber);
+        this.businessName = businessName;
+    }
+
+    public String getBusinessInfo(){
+        return "Business Name: "+this.businessName+super.getAccountInfo();
+    }
     
 }

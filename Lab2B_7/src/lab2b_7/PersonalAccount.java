@@ -9,6 +9,20 @@ package lab2b_7;
  *
  * @author jakedotts
  */
-public class PersonalAccount {
+public class PersonalAccount extends Account{
+    private String fName;
+    private String lName;
     
+    public PersonalAccount(){
+        
+    }
+    public PersonalAccount(String fName, String lName, double accountBalance, double accountNumber){
+        super(accountBalance, accountNumber);
+        this.fName = fName;
+        this.lName = lName;
+    }
+
+    public String getBusinessInfo(){
+        return "Customer Name: "+this.fName+" "+this.lName+super.getAccountInfo();
+    }
 }

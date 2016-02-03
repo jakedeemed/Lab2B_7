@@ -9,12 +9,16 @@ package lab2b_7;
  *
  * @author jakedotts
  */
-public class CheckingAccount {
+public class Checking {
     
     private double checkingBalance = 0.0;
     
-    public CheckingAccount(){
+    public Checking(){
         
+    }
+    
+    public Checking(double checkingBalance){
+        this.checkingBalance = checkingBalance;
     }
     
     public double getCheckingBalance(){
