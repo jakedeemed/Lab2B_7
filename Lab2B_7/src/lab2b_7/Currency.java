@@ -7,8 +7,19 @@ package lab2b_7;
 
 /**
  *
- * @author jakedotts
+ * @author EdgarJC
  */
-public class Currency {
+public class Currency{
+    double  bills;
     
+    private void setRequest(double in){
+         Atm a = new Atm();
+         bills = a.getRequest();
+    }
+    
+    private double currency(){
+        return bills;
+        
+    }
+
 }
