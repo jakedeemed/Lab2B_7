@@ -25,7 +25,4 @@ public class Checking {
         return checkingBalance;
     }
     
-    public void setCheckingBalance(double newCheckingBalance){
-        checkingBalance = newCheckingBalance;
-    }
 }

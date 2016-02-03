@@ -21,10 +21,6 @@ public class Savings {
         this.savingsBalance = savingsBalance;
     }
     
-    public void setSavingsBalance(double newSavingsBalance){
-        savingsBalance = newSavingsBalance;
-    }
-    
     public double getSavingsBalance(){
         return savingsBalance;
     }

@@ -9,30 +9,17 @@ package lab2b_7;
  * @author Max Kosabutsi
  */
 public class PersonalCustomer extends Customer{
-    private String firstName;
-    private String lastName;
+    private int age;
     
     //If needed, multiple constructors can be added, but I didn't see a reason right now.
-    public PersonalCustomer(int accountNumber,String accountName, String firstName, String lastName){
-        super(accountNumber, accountName);
-        this.lastName = lastName;
-        this.firstName = firstName;
+    public PersonalCustomer(String customerName, String customerAddress, int age){
+        super(customerName, customerAddress);
+        this.age = age;
     }   
     
     //Getters and setters for FirstName and LastName were split so each variable can be called separately
-    public String getName(){
-        return "first name: " +firstName +" last name: " +lastName;
-    }
-    public int getAccountNumber(){
-        return super.accountNumber;
-    }
-    
-    public void setFirstName(String FirstName){
-        this.firstName = firstName;
-    }
-    
-    public void setLastName(String LastName){
-        this.lastName = lastName;
+    public String getPersonalCustInfo(){
+        return super.getInfo()+", age: "+this.age;
     }
 
 }

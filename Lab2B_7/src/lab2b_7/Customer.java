@@ -14,15 +14,18 @@ public class Customer {
     /* changed these variables to protected since private variables are not inherited by subclasses.
        
     */
-    protected int accountNumber;
-    protected String accountName;
+    private String customerName;
+    private String customerAddress;
     
     //there is only one constructor for Customer, but more can be added.
-    public Customer(int accountNumber, String accountName ){
+    public Customer(String customerName, String customerAddress ){
         super();
-        this.accountNumber = accountNumber;
-        this.accountName = accountName;   
+        this.customerName = customerName;
+        this.customerAddress = customerAddress;   
     }
     
+    public String getInfo(){
+        return "Customer Name: "+this.customerName+ ", Customer address: "+this.customerAddress;
+    }
     
 }
