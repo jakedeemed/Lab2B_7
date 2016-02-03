@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @author EdgarJC
  */
 public class Lab2B_7 {
-    public static double userInput;
+    public static int userInput;
     /**
      * @param args the command line arguments
      */
@@ -71,9 +71,10 @@ public class Lab2B_7 {
             perCustSaveAcctBal = save.getSavingsBalance();
             perCustAcctBal = perCustSaveAcctBal + perCustChkAcctBal;
             
-            PersonalAccount Pa = new PersonalAccount(perCustFname, perCustLname, perCustAcctBal, perCustAcctNum);
+            PersonalAccount Pa = new PersonalAccount(perCustFname, perCustLname, perCustAcctBal, perCustAcctNum);         
             
             System.out.println("here is your info: "+Pa.getAccountInfo());
+            
         }
         else if(custType.equalsIgnoreCase("C")){
             System.out.println("Welcome commercial customer!");
@@ -109,10 +110,21 @@ public class Lab2B_7 {
         }
         
     
-        System.out.println("How much money do you need?");
-        userInput = sc.nextDouble();
+        System.out.println("How much money would you like to withdraw in increments of 20?");
+        userInput = sc.nextInt();
         //Prints out the amount
-        System.out.println(a.getRequest());
+        
+        
+        do{
+            System.out.println("Amount Withdraw:" + a.getRequest());
+        }   
+        
+       while(userInput % 20 != 0);
+           System.out.println("Enter a multiple of 20!");
+       
+                    
+        
+        
        
     }
     

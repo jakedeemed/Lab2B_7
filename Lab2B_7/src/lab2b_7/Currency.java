@@ -10,16 +10,15 @@ package lab2b_7;
  * @author EdgarJC
  */
 public class Currency{
-    double  bills;
+    int  bills;
     
     private void setRequest(double in){
          Atm a = new Atm();
          bills = a.getRequest();
     }
     
-    private double currency(){
+    public int currency(){
         return bills;
-        
     }
 
 }

@@ -15,12 +15,19 @@ public class Atm {
     Lab2B_7 m = new Lab2B_7();
     
    
-    private void setRequest(double currency){
+    private void setRequest(int currency){
         m.userInput = currency;
     }
     
-    double getRequest(){
+    int getRequest(){
         return m.userInput;
     }  
+    private void setCurrency(double cu){
+        cu = c.currency();
+    }
+    
+    int getCurrency(){
+        return c.currency();
+    }
 
 }
