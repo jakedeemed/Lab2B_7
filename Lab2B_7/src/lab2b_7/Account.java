@@ -23,6 +23,6 @@ public class Account extends Checking{
     }
     
     public String getAccountInfo(){
-        return "/n Account Number: "+accountNumber+"/n Account Balance: "+accountBalance;
+        return "Account Number: "+accountNumber+"Account Balance: "+accountBalance;
     }
 }

@@ -10,9 +10,11 @@ package lab2b_7;
  * @author Max Kosabutski
  */
 public class CommercialCustomer extends Customer {
+    
     private int yearsInService;
     
     //as always, more constructors can be added.
+
     public CommercialCustomer(String customerName,String customerAddress, int yearsInService){
         super(customerName,customerAddress);
         this.yearsInService = yearsInService;
